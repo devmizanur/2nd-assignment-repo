@@ -6,6 +6,10 @@
 body{
   background-color: rgba(0, 0, 0, 0.929);
 }
+.hamberger{
+  color: white;
+  display: none;
+}
 .menu-bar{
   width:90%;
   display: flex;
@@ -296,6 +300,7 @@ margin-bottom: 100px;
 }
 .bmi-right-section{
   width:50% ;
+  border: 1px solid red;
 }
 .bmi-right-content h1{
   font-size: 2.10rem;
@@ -310,17 +315,23 @@ margin-bottom: 100px;
   margin-bottom: 60px;
 }
 /*input form*/
-.bmi-right-input input{
-  height: 50px;
-  width: 300px;
+.bmi-input form{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  height:200px;
+  gap:15px;
+}
+.bmi-input input{
   border-radius: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  font-size: 1.10rem;
-  font-weight: 100;
-  background-color: rgba(128, 128, 128, 0.189);
-  border: none;
+  font-size: 1.15rem;
+  font-weight: 400;
   padding-left: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+}
+.activity-span{
+  grid-column:span 2;
 }
 .btn-bmi{
   height: 60px;
@@ -522,6 +533,11 @@ margin-bottom:20px;
   }
   .menu{
     display: none;
+  }
+  .hamberger{
+    display: block;
+    text-align: left;
+    font-size: 1.8rem;
   }
   .primary-btn{
     background-color: red;
