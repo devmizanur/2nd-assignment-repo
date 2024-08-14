@@ -324,6 +324,31 @@ margin-bottom: 100px;
   margin-bottom: 60px;
 }
 /*input form*/
+.bmi-input{
+  position: relative;
+}
+.bmi-input form::before{
+  position: absolute;
+  content:'';
+  top:160px;
+  left:675px;
+  height: 15px;
+  width: 15px;
+  border-right: 1px solid #ddddddd2;
+  border-bottom: 1px solid #ddddddd2;
+  transform:rotate(45deg);}
+.bmi-input form::after{
+  position: absolute;
+  content:'';
+  top:88px;
+  left:674px;
+  height: 15px;
+  width: 15px;
+  border-right: 1px solid #ddddddd2;
+  border-bottom: 1px solid #ddddddd2;
+  transform:rotate(45deg);
+
+}
 .bmi-input form{
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -624,6 +649,12 @@ margin-bottom:20px;
    }
    .bmi-right-content p{
     margin-bottom: 30px;
+   }
+   .bmi-input form::after{
+    left: 365px;
+   }
+   .bmi-input form::before{
+    left: 365px;
    }
    .bmi-calculator{
     margin: 0rem;
