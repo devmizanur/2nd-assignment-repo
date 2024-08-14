@@ -632,6 +632,12 @@ margin-bottom:20px;
     flex-direction: column;
     gap:0rem;
    }
+   .get-started-mid{
+    margin: 15px 0px;
+   }
+   .get-started-right{
+    margin: 15px 0px;
+   }
    .get-started-mid li, .get-started-right li{
     font-size: 1.15rem;
    }
