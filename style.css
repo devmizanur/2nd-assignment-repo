@@ -194,13 +194,19 @@ margin-top: 100px;
   background-color: rgba(35, 31, 31, 0.931);
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  border-radius:4rem;
+  border-radius:18px;
   align-items: center;
   justify-items: center;
 }
+.run-image{
+  width: 520px;
+}
 .run-image img{
   width: 100%;
-  border-radius:15%;
+  border-radius:18px;
+}
+.run-content{
+  margin-top: 50px;
 }
 .run-content h1{
   font-size:3.5rem;
@@ -209,16 +215,20 @@ margin-top: 100px;
 }
 .run-content p{
   font-size: 1.25rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   margin-top: 20px;
 }
 .run-btn{
   background-color: red;
-  padding: 10px 60px;
-  border-radius: 20px;
+  width: 224px;
+  height: 60px;
+  border-radius: 40px;
   color: white;
   font-size: 1.5rem;
+  font-weight: 600;
   margin-top: 60px;
+  margin-bottom: 50px;
+  border: none;
 }
 /*training-exercise-section style*/
 .training-exercise-section{
@@ -558,6 +568,7 @@ margin-bottom:20px;
   }
   .run-extra-section{
     grid-template-columns: repeat(1, 1fr);
+    margin-bottom:60px;
   }
   .run-content{
     display: flex;
@@ -565,8 +576,20 @@ margin-bottom:20px;
     justify-content: center;
   }
   .run-btn{
-    padding:10px 30px;
+    width: 350px;
     margin-bottom: 20px;
+    margin-top: 24px;
+  }
+  .run-image{
+    width: 350px;
+    margin-bottom: 35px;
+  }
+  .run-content h1{
+    font-size: 2.5rem;
+  }
+  .run-content p{
+    width: 350px;
+    font-size: 1rem;
   }
   .training-card{
     grid-template-columns: repeat(2,1fr);
@@ -596,6 +619,12 @@ margin-bottom:20px;
    .bmi-left-section h1{
     font-size: 1.41rem;
    }
+   .bmi-left-section table{
+    margin-bottom:35px;
+   }
+   .bmi-right-content p{
+    margin-bottom: 30px;
+   }
    .bmi-calculator{
     margin: 0rem;
     margin-left: 12px;
@@ -603,6 +632,15 @@ margin-bottom:20px;
    .bmi-calculator h1{
     font-size: 2rem;
     font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 15px;
+   }
+   .bmi-calculator p{
+    font-size: 1rem;
+   }
+
+   .bmi-input form{
+    grid-template-columns: 200px 200px;
    }
    .bmi-right-content h1{
     font-size: 1.4rem;
